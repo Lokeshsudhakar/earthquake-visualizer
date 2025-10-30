@@ -108,10 +108,10 @@ Code Structure
 /public/index.html — Root file for map container
 
 Demo Video
-(Add your YouTube or Drive VIDEO DEMO LINK here when ready!)
+( Drive VIDEO DEMO LINK)
 
 Screenshots
-(Add any relevant screenshots showing main features.)
+(https://drive.google.com/drive/folders/1HQQSlQvbjZbYAEIH7M54uZvOFfY9dH5y)
 
 License
 MIT
