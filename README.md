@@ -1,109 +1,120 @@
-# Getting Started with Create React App
+Earthquake Visualizer
+UI Take-Home Challenge Solution — Geography Student Earthquake Map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+Earthquake Visualizer is a web application to help students and enthusiasts visualize recent earthquake activity around the globe.
+It fetches live earthquake data from the USGS Earthquake API and plots events on an interactive world map using React and Leaflet.
 
-## Available Scripts
+The app lets you filter earthquakes by minimum magnitude, explore details about each quake, and pan/zoom to different regions for discovery.
 
-In the project directory, you can run:
+Live Demo
+Try the app live: https://glowing-brigadeiros-5ab20d.netlify.app/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technology Stack:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend: React
 
-### `npm run build`
+Mapping: React-Leaflet (Leaflet.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data: USGS Earthquake API (no authentication required)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Styling: [Your method — e.g. CSS Modules, Tailwind CSS, plain CSS]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features
+Global Map showing recent earthquakes
 
-### `npm run eject`
+Magnitude Filter: use the slider to show only quakes stronger than chosen value
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Zoom/Pan the map, explore regions interactively
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click for Details: markers show location, magnitude, and time
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Responsive & User-Friendly design
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Error Handling: Shows message if data cannot be loaded
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Requirements (per Challenge PDF):
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Uses React for UI
 
-### Analyzing the Bundle Size
+Uses public API (USGS for earthquake data)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Interactive map (Leaflet)
 
-### Making a Progressive Web App
+Magnitude filtering (slider)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Deployed and live on Netlify
 
-### Advanced Configuration
+Code available on GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Simple, intuitive UI targeted for students
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Getting Started-
+You can run or modify this app locally:
 
-### `npm run build` fails to minify
+Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Earthquake Visualizer
+cmd:
+git clone https://github.com/Lokeshsudhakar/earthquake-visualizer
+cd earthquake-visualizer
 
-An interactive web application to visualize global earthquake activity on a map using real-time data from the USGS API.
 
-## Features
+Install dependencies-
 
-- 🔴 Color-coded circles for earthquake magnitude (Red: > 6, Orange: > 4, Yellow: ≤ 4)
-- 🌍 World map powered by React Leaflet
-- 🕓 Fetches up-to-date earthquake data from the USGS for recent days
-- 📱 Responsive design for mobile and desktop
-- 📋 Legend for marker color reference
+cmd:
+npm install
 
-## How To Run Locally
 
-1. Clone or download this repository.
-2. In your terminal, navigate to the project folder and run:
-3. Visit [http://localhost:3000](http://localhost:3000) in your browser.
+Start development server-
 
-## Technology Used
+cmd:
+npm start
+App runs at http://localhost:3000
 
-- React
-- React Leaflet
-- Leaflet
-- USGS Earthquake API
 
-## Customization Ideas
+Build for production
 
-- Add magnitude or date filters for improved usability
-- Enhance styling and app layout with custom CSS or a framework like Tailwind
-- Add loading spinner
-- Deploy on Netlify, Vercel, or GitHub Pages
+cmd:
+npm run build
 
-## Deployment
 
-Once you finish, deploy your app for sharing using your preferred static site host (Netlify, Vercel, etc.).
+Deployment-
+Netlify
+This app is auto-deployed from GitHub using Netlify.
+You can connect this repo to your own Netlify account and set:
 
----
+Build command: npm run build
+Publish directory: build
 
-Made for a Take-Home UI Challenge.
+SPA Routing with React Router
+If you add React Router, create public/_redirects with:
+
+text
+/* /index.html 200
+Code Structure
+/src/App.js — Main logic: fetch data, filter, and render map
+
+/src/components/Map.js — Map setup and marker rendering
+
+/src/components/Slider.js — Magnitude filter UI
+
+/public/index.html — Root file for map container
+
+Demo Video
+(Add your YouTube or Drive VIDEO DEMO LINK here when ready!)
+
+Screenshots
+(Add any relevant screenshots showing main features.)
+
+License
+MIT
+
+Contact
+For questions or collaboration, contact katari lokesh at lokeshsudhakar218@gmail.com
